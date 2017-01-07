@@ -1,5 +1,5 @@
 {
-    "name" : "kormanyuri/admin-frame",
+    "name" : "ceant/adminframe",
     "description" : "A frame admin bundle",
     "type" : "symfony-bundle",
     "authors" : [{
