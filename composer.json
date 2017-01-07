@@ -1,0 +1,30 @@
+{
+    "name" : "ceant/admin-fame",
+    "description" : "A frame admin bundle",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "Yuri Korman",
+        "email" : "kormna.yuri@gmail.com"
+    }],
+    "keywords" : [
+        "admin frame"
+    ],
+    "license" : [
+        "MIT"
+    ],
+    "require" : {
+    },
+    "autoload" : {
+        "psr-0" : {
+            "Ceant\\AdminBundle" : ""
+        }
+    },
+    "target-dir" : "Ceant/AdminBundle",
+    "repositories" : [{
+    }],
+    "extra" : {
+    "branch-alias" : {
+            "dev-master" : "0.1"
+        }
+    }
+}
