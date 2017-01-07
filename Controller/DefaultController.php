@@ -8,6 +8,6 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('CeantAdminBundle:Default:index.html.twig');
+        return $this->render('CeantAdminBundle:pages:home.html.twig');
     }
 }

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>Pages - Admin Dashboard UI Kit - Blank Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+
+    <link rel="apple-touch-icon" href="{{ asset('pages/ico/60.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('pages/ico/76.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('pages/ico/120.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('pages/ico/152.png') }}">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    {% stylesheets 'admin/assets/plugins/pace/pace-theme-flash.css'
+                   'admin/assets/plugins/bootstrapv3/css/bootstrap.min.css'
+                   'admin/assets/plugins/font-awesome/css/font-awesome.css'
+                   'admin/assets/plugins/jquery-scrollbar/jquery.scrollbar.css'
+                   'admin/assets/plugins/select2/css/select2.min.css'
+                   'admin/assets/plugins/switchery/css/switchery.min.css'
+                   'admin/pages/css/pages-icons.css'
+                   'admin/pages/css/pages.css' %}
+        <link href="{{ asset_url }}" rel="stylesheet" type="text/css" />
+    {% endstylesheets %}
+
+    <!--[if lte IE 9]>
+    <link href="{{ asset('admin/assets/plugins/codrops-dialogFx/dialog.ie.css') }}" rel="stylesheet" type="text/css" media="screen" />
+    <![endif]-->
+</head>
+<body class="fixed-header ">
+
+{% include 'admin/parts/sidebar.html.twig' %}
+
+<!-- START PAGE-CONTAINER -->
+<div class="page-container ">
+
+    {% include 'admin/parts/header.html.twig' %}
+
+    <!-- START PAGE CONTENT WRAPPER -->
+    <div class="page-content-wrapper ">
+        <!-- START PAGE CONTENT -->
+        <div class="content ">
+
+            {% include 'admin/parts/jumbotron.html.twig' %}
+
+            <!-- START CONTAINER FLUID -->
+            <div class="container-fluid container-fixed-lg">
+                <!-- BEGIN PlACE PAGE CONTENT HERE -->
+                {% block content %}{% endblock %}
+                <!-- END PLACE PAGE CONTENT HERE -->
+            </div>
+            <!-- END CONTAINER FLUID -->
+        </div>
+        <!-- END PAGE CONTENT -->
+        <!-- START COPYRIGHT -->
+        <!-- START CONTAINER FLUID -->
+        <!-- START CONTAINER FLUID -->
+        <div class="container-fluid container-fixed-lg footer">
+            <div class="copyright sm-text-center">
+                <p class="small no-margin pull-left sm-pull-reset">
+                    <span class="hint-text">Copyright &copy; 2014 </span>
+                    <span class="font-montserrat">Megaprint</span>.
+                    <span class="hint-text">All rights reserved. </span>
+                    <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> | <a href="#" class="m-l-10">Privacy Policy</a></span>
+                </p>
+                <p class="small no-margin pull-right sm-pull-reset">
+                    <a href="#">Hand-crafted</a> <span class="hint-text">&amp; Made with Love ®</span>
+                </p>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- END COPYRIGHT -->
+    </div>
+    <!-- END PAGE CONTENT WRAPPER -->
+</div>
+<!-- END PAGE CONTAINER -->
+
+{% include 'admin/parts/quickview.html.twig' %}
+
+{% include 'admin/parts/overlay.html.twig' %}
+
+<!-- BEGIN VENDOR JS -->
+{% javascripts 'admin/assets/plugins/pace/pace.min.js'
+               'admin/assets/plugins/jquery/jquery-1.11.1.min.js'
+               'admin/assets/plugins/modernizr.custom.js'
+               'admin/assets/plugins/jquery-ui/jquery-ui.min.js'
+               'admin/assets/plugins/bootstrapv3/js/bootstrap.min.js'
+               'admin/assets/plugins/jquery/jquery-easy.js'
+               'admin/assets/plugins/jquery-unveil/jquery.unveil.min.js'
+               'admin/assets/plugins/jquery-bez/jquery.bez.min.js'
+               'admin/assets/plugins/jquery-ios-list/jquery.ioslist.min.js'
+               'admin/assets/plugins/jquery-actual/jquery.actual.min.js'
+               'admin/assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js'
+               'admin/assets/plugins/select2/js/select2.full.min.js'
+               'admin/assets/plugins/classie/classie.js'
+               'admin/assets/plugins/switchery/js/switchery.min.js'
+               'admin/pages/js/pages.min.js'
+               'admin/assets/js/scripts.js' %}
+<script src="{{ asset_url }}" type="text/javascript"></script>
+{% endjavascripts %}
+
+
+</body>
+</html>
